@@ -32,7 +32,7 @@ jobs:
     - uses: mr-smithers-excellent/docker-build-push@v6
       name: Build & push Docker image to AWS ECR
       with:
-        image: 773587062517.dkr.ecr.us-west-2.amazonaws.com/todo-kwesi
+        image: 773587062517.dkr.ecr.us-west-2.amazonaws.com/todo-kwesi:latest
         registry: 773587062517.dkr.ecr.us-west-2.amazonaws.com
       env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
